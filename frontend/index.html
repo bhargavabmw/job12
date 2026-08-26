@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>CareerBridge | Find work that moves you</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <a class="brand" href="index.html"><span class="brand-mark">CB</span>CareerBridge</a>
+      <nav id="nav"></nav>
+    </header>
+    <main class="home-main">
+      <section class="hero home-hero"
+        <div class="hero-copy">
+          <span class="eyebrow">THE BETTER WAY TO WORK</span>
+          <h1>Find work that moves you forward.</h1>
+          <p>Discover thoughtful teams, meaningful roles, and opportunities built around your next chapter.</p>
+          <form class="hero-search" onsubmit="search(event)">
+            <label><span>What are you looking for?</span><input name="q" placeholder="Job title, skills, or company" /></label>
+            <label><span>Where?</span><input name="location" placeholder="City or remote" /></label>
+            <button aria-label="Search jobs">Search jobs <span>→</span></button>
+          </form>
+          <div class="hero-meta"><span><strong>2,400+</strong> roles posted</span><span><strong>890</strong> teams hiring</span><span><strong>94%</strong> candidate satisfaction</span></div>
+        </div>
+        <div class="hero-art" aria-hidden="true"><div class="art-card art-card-main"><span class="art-icon">✦</span><strong>Good work<br />starts here.</strong><small>Curated roles for ambitious people</small></div><div class="art-card art-card-float"><span class="pulse-dot"></span>New role match<br /><strong>Product Designer</strong></div><div class="art-line"></div></div>
+      </section>
+
+      <section class="home-section">
+        <div class="section-heading"><div><span class="eyebrow">EXPLORE BY FOCUS</span><h2>Make your next move</h2></div><a class="text-link" href="jobs.html">View all jobs <span>→</span></a></div>
+        <div class="category-grid"><a href="jobs.html?q=Engineering" class="category-card"><span class="category-icon">⌘</span><strong>Engineering</strong><small>286 open roles</small></a><a href="jobs.html?q=Design" class="category-card"><span class="category-icon">◈</span><strong>Design & Creative</strong><small>124 open roles</small></a><a href="jobs.html?q=Marketing" class="category-card"><span class="category-icon">↗</span><strong>Marketing</strong><small>98 open roles</small></a><a href="jobs.html?q=Sales" class="category-card"><span class="category-icon">◎</span><strong>Sales & Growth</strong><small>176 open roles</small></a></div>
+      </section>
+
+      <section class="home-section split-section"><div><span class="eyebrow">FOR EVERY AMBITION</span><h2>A job search that feels human.</h2><p class="section-lede">From your first role to your next leadership chapter, CareerBridge brings the right people and possibilities together.</p><a class="button" href="jobs.html">Start exploring <span>→</span></a></div><div class="trust-list"><div><b>01</b><span><strong>Search with clarity</strong><small>Useful filters, honest details, zero noise.</small></span></div><div><b>02</b><span><strong>Apply with confidence</strong><small>Keep your resume and applications in one place.</small></span></div><div><b>03</b><span><strong>Grow with momentum</strong><small>Track every step from applied to selected.</small></span></div></div></section>
+    </main>
+    <footer><div><a class="brand" href="index.html"><span class="brand-mark">CB</span>CareerBridge</a><p>Better work, better matched.</p></div><div class="footer-links"><a href="jobs.html">Find jobs</a><a href="register.html">For recruiters</a><a href="login.html">Sign in</a></div></footer>
+    <script src="js/config.js"></script><script src="js/utils.js"></script><script src="js/api.js"></script><script src="js/auth.js"></script><script src="js/jobs.js"></script>
+  </body>
+</html>

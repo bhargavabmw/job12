@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Recruiter dashboard | CareerBridge</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <a class="brand" href="index.html">CareerBridge</a>
+      <nav id="nav"></nav>
+    </header>
+    <main>
+      <div class="page-head">
+        <div>
+          <h1>Recruiter dashboard</h1>
+          <p class="muted">Manage your company, open roles, and candidates.</p>
+        </div>
+      </div>
+      <div id="recruiter-stats" class="grid"></div>
+      <div class="grid dashboard-section">
+        <section class="panel">
+          <h2>Company profile</h2>
+          <form onsubmit="saveCompany(event)">
+            <label>Company name<input name="company_name" required /></label
+            ><label>Location<input name="location" required /></label
+            ><label>Description<textarea name="description"></textarea></label>
+            <p><button>Save company profile</button></p>
+          </form>
+        </section>
+        <section class="panel">
+          <h2>Post or edit job</h2>
+          <form id="job-form" onsubmit="submitJob(event)">
+            <label>Title<input name="title" required /></label
+            ><label>Location<input name="location" required /></label
+            ><label
+              >Salary<input
+                name="salary"
+                placeholder="Example: ₹6–8 LPA" /></label
+            ><label
+              >Type<select name="job_type">
+                <option>Full-time</option>
+                <option>Part-time</option>
+                <option>Contract</option>
+                <option>Internship</option>
+                <option>Remote</option>
+              </select></label
+            ><label
+              >Description<textarea
+                name="description"
+                required
+              ></textarea></label
+            ><label
+              >Requirements<textarea name="requirements"></textarea>
+            </label>
+            <p><button>Post job</button></p>
+          </form>
+        </section>
+      </div>
+      <section class="dashboard-section">
+        <h2>Manage jobs</h2>
+        <div id="myjobs" class="grid"></div>
+      </section>
+      <section class="dashboard-section">
+        <h2>Applicants</h2>
+        <div id="apps"></div>
+      </section>
+    </main>
+    <script src="js/config.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/resumes.js"></script>
+    <script src="js/applications.js"></script>
+    <script src="js/recruiter.js"></script>
+  </body>
+</html>
