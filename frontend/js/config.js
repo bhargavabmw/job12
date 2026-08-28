@@ -1,1 +1,1 @@
-const API_BASE_URL = 'https://carrerbridge-re6t.onrender.com/api';s
+const API_BASE_URL = 'https://carrerbridge-re6t.onrender.com/api';
